@@ -98,7 +98,7 @@ class habrArticleSrcDownloader():
         video = url_soup.findAll('div', {'class': 'tm-iframe_temp'})
 
         # одиночное скачивание статьи
-        if name is None:
+        if name is None or 's':
 
             habrSD.create_dir(DIR_SINGLES)
             os.chdir(DIR_SINGLES)
