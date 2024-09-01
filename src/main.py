@@ -18,6 +18,9 @@ from pathlib import Path
 
 # save in obsidian vault
 obsidian_valt = Path('/Users/s.iakimchuk/Documents/Obsidian Vault/Habr')
+if not obsidian_valt.is_dir():
+    print('Возможно, вы не верно указали путь до Obsidian Vault')
+    exit(1)
 
 DIR_ARCTICLE = obsidian_valt / 'article'
 DIR_FAVORITES = obsidian_valt / 'favorites'
