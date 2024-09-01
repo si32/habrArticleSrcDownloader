@@ -14,11 +14,16 @@ import math
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
-DIR_ARCTICLE = 'article'
-DIR_FAVORITES = 'favorites'
-DIR_PICTURE = 'picture'
-DIR_VIDEO = 'video'
-DIR_SINGLES = 'singles'
+from pathlib import Path
+
+# save in obsidian vault
+obsidian_valt = Path('/Users/s.iakimchuk/Documents/Obsidian Vault/Habr')
+
+DIR_ARCTICLE = obsidian_valt / 'article'
+DIR_FAVORITES = obsidian_valt / 'favorites'
+DIR_PICTURE = obsidian_valt / 'picture'
+DIR_VIDEO = obsidian_valt / 'video'
+DIR_SINGLES = obsidian_valt / 'singles'
 HABR_TITLE = "https://habr.com"
 
 
